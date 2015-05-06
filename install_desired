@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo apt-get -y install unetbootin update-notifier keepassx preload prelink gdebi ppa-purge gnome-disk-utility gparted
+sudo apt-get -y install aspell aspell-en aspell-es gufw gnome-exe-thumbnailer shutter gimp vlc icedtea-7-plugin openjdk-7-jre
+sudo apt-get -y install chromium-browser chromium-browser-l10n
+sudo apt-get -y install libreoffice libreoffice-help-es libreoffice-l10n-es
+sudo apt-get -y remove iceweasel
+
+#sudo apt-get -y install apt-transport-https

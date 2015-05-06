@@ -1,0 +1,5 @@
+
+apt-get -y install sudo gksu
+pluma /etc/sudoers
+
+usuario ALL=(ALL) ALL

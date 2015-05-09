@@ -1,0 +1,4 @@
+#not working
+
+wget http://dl.dropbox.com/u/31330480/SoftwareProperties.py
+sudo mv SoftwareProperties.py /usr/share/pyshared/softwareproperties/

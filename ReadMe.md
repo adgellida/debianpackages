@@ -5,9 +5,7 @@
 
 Compatible with any Debian based system:
 
-Ubuntu, Xubuntu, Ubuntu MATE, Linux Mint, Kubuntu, Lubuntu, Ubuntu Kylin, Edubuntu...
-
-Designed for 8.0 (Jessie).
+Designed for 8.0 (Jessie). It gets vivid ppas.
 
 Instructions
 =============================================
@@ -16,11 +14,16 @@ Read the code and do your modifications.
 
 Then do these basics steps:
 
+1.add normal user to sudoers
+2.add ppa support
+
 Go to your selected script and modified it.
 
-* "installworking" if you want to install some basic packages.
+* "installpackages1" and/or "installpackages2" if you want to install some basic packages.
 1. Execute it.
 1. (Optional) Check all the other content.
+
+3.rename ppas
 
 Remember to add exec permissions to all scripts!
 

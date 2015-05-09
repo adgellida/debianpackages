@@ -1,3 +1,4 @@
+##execute with root user
 
 apt-get -y install sudo gksu
 pluma /etc/sudoers

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo apt-get -y install software-properties-common python-software-properties

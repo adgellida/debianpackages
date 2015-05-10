@@ -15,7 +15,7 @@
 
 ######## OS & Utilities
 
-#### apt-fast - ONLY 14.10
+#### apt-fast
 #http://www.atareao.es/ubuntu/liberado-apt-fast-1-6-6-con-configuracion-y-desde-ppa-oficial/
 #http://www.atareao.es/ubuntu/instalar-desde-el-terminal-a-velocidad-de-vertigo-con-apt-fast/
 ##sudo add-apt-repository -y ppa:apt-fast/stable
@@ -25,10 +25,10 @@ sudo apt-get -y update
 sudo apt-get -y install apt-fast
 
 #### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors) - ONLY 14.10
-sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
-sudo apt-fast -y update
-sudo apt-fast -y install y-ppa-manager
+#sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
+#sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+#sudo apt-fast -y update
+#sudo apt-fast -y install y-ppa-manager
 
 #### Various
 sudo apt-fast -y install synaptic preload prelink gdebi gnome-disk-utility gparted #ubuntu-restricted-extras ttf-ancient-fonts ppa-purge 
@@ -156,6 +156,8 @@ sudo apt-fast -y install google-chrome-unstable
 #### libreoffice
 #sudo add-apt-repository -y ppa:libreoffice/libreoffice-prereleases
 #sudo add-apt-repository -y ppa:libreoffice/libreoffice-4-4
+#sudo add-apt-repository -y ppa:libreoffice/ppa
+#sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
 #sudo apt-fast -y update
 sudo apt-fast -y install libreoffice libreoffice-help-es libreoffice-l10n-es
 

@@ -104,11 +104,11 @@ sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre #icedtea-8-plugin openjd
 ######## Web Browsers
 
 #### google-chrome
-#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-#sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
-#sudo apt-fast -y update
-#sudo apt-fast -y install google-chrome
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+test -f /etc/apt/sources.list.d/google-chrome.list || sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+sudo apt-fast -y install google-chrome-stable
 
 #### google-chrome-unstable
 #wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -118,7 +118,7 @@ sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre #icedtea-8-plugin openjd
 #sudo apt-fast -y install google-chrome-unstable
 
 #### chromium
-sudo apt-fast -y install chromium-browser chromium-browser-l10n
+#sudo apt-fast -y install chromium-browser chromium-browser-l10n
 
 #### pepper-flash - for chromium
 ##pepper-flash-player from official repos

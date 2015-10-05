@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### jdownloader-stable
+sudo add-apt-repository -y ppa:jd-team/jdownloader
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+sudo apt-fast -y install jdownloader

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##### mumble
+sudo add-apt-repository -y ppa:mumble/snapshot
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+sudo apt-fast -y install mumble

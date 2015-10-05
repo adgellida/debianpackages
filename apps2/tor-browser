@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### tor-browser
+sudo add-apt-repository -y ppa:webupd8team/tor-browser
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+sudo apt-fast -y install tor-browser

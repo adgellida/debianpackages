@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### blender
+sudo add-apt-repository -y ppa:thomas-schiex/blender
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+sudo apt-fast -y install blender

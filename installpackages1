@@ -19,6 +19,42 @@
 #### apt-fast
 apps1/apt-fast
 
+#### y-ppa-manager - (launchpad getkeys + missing gpg-keys + gpg badsig errors)
+apps1/y-ppa-manager
+
+#### getdeb
+apps1/getdeb
+
+#### playdeb
+apps1/playdeb
+
+#### mtp-support
+apps1/mtp-support
+
+#### plank-testing - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
+#apps1/plank-testing
+
+#### xorg-edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
+apps1/xorg-edgers
+
+#### oibaf - Possibly Unstable
+apps1/oibaf
+
+#### graphics-drivers-team - Possibly Unstable
+#apps1/graphics-drivers-team
+
+#### keepassx-stable
+#sudo apt-fast -y install keepassx
+
+#### keepassx-daily
+apps1/keepassx-daily
+
+#### ubuntu-restricted-extras
+sudo apt-fast -y install ubuntu-restricted-extras
+
+#### ttf-ancient-fonts
+sudo apt-fast -y install ttf-ancient-fonts
+
 #### synaptic
 sudo apt-fast -y install synaptic
 
@@ -31,14 +67,17 @@ sudo apt-fast -y install prelink
 #### gdebi
 sudo apt-fast -y install gdebi
 
+#### ppa-purge
+sudo apt-fast -y install ppa-purge
+
 #### gnome-disk-utility
 sudo apt-fast -y install gnome-disk-utility
 
 #### gparted
 sudo apt-fast -y install gparted
 
-#### update-notifier
-sudo apt-fast -y install update-notifier
+#### mate-tweak
+sudo apt-fast -y install mate-tweak
 
 ######## Desktop Environment
 
@@ -50,8 +89,6 @@ sudo apt-fast -y install update-notifier
 apps1/vibrancy-colors
 
 ######## Language packages
-#sudo apt-fast -y install myspell-es wspanish language-pack-es language-pack-es-base 
-#sudo apt-fast -y install myspell-en-gb myspell-en-us
 sudo apt-fast -y install aspell aspell-en aspell-es
 
 ######## Security & Privacy
@@ -65,11 +102,29 @@ sudo apt-fast -y install gufw
 
 ######## Photos & Graphics
 
+#### gimp
+#apps1/gimp
+
+#### gimp-edge
+apps1/gimp-edge
+
+#### krita-bleeding-edge build
+apps1/krita-bleeding-edge
+
+#### krita-testing
+#apps1/krita-testing
+
+#### gnome-exe-thumbnailer
+sudo apt-fast -y install gnome-exe-thumbnailer
+
 #### shutter
 sudo apt-fast -y install shutter
 
-#### gimp
-apps1/gimp
+#### inkscape-stable
+#apps1/inkscape-stable
+
+#### inkscape-trunk
+apps1/inkscape-trunk
 
 ######## Audio & Music
 
@@ -81,13 +136,25 @@ apps1/gimp
 
 ######## All multimedia content
 
+#### ffmpeg
+sudo apt-fast -y install ffmpeg
+
 #### vlc-stable
-apps/vlc-stable
+#apps/vlc-stable
+
+#### vlc-daily
+apps1/vlc-daily
 
 ######## Development
 
+#### notepadqq
+apps1/notepadqq
+
+#### openjdk-8
+apps1/openjdk-8
+
 #### openjdk-7
-sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre
+#sudo apt-fast -y install icedtea-7-plugin openjdk-7-jre
 
 ######## Web Browsers
 
@@ -115,12 +182,16 @@ apps1/pepper-flash-for-firefox
 
 ######## File Management
 
-#### Various
-#sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar sharutils mpack arj cabextract		#p7zip
+#### Compress/Uncompress utils
+sudo apt-fast -y install rar unrar unace p7zip-full p7zip-rar p7zip sharutils mpack arj cabextract
 
 ######## File Sharing
 
-#
+#### jdownloader-stable
+#apps1/jdownloader-stable
+
+#### jdownloader-beta
+apps1/jdownloader-beta
 
 ######## News & Books
 
@@ -141,7 +212,8 @@ sudo apt-fast -y install qpdfview
 ######## Extra
 
 #### uninstallpackages
-sudo apt-fast -y remove iceweasel #pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell
+sudo apt-fast -y remove atril tilda pidgin* thunderbird* adobe-flashplugin flashplugin-nonfree-extrasound flashplugin-installer shotwell
+#sudo apt-fast -y remove firefox firefox-locale-es firefox-locale-en xul-ext-ubufox
 
 #### Upgrading system
 #sudo apt-get -y upgrade

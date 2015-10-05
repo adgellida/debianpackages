@@ -1,0 +1,7 @@
+#!/bin/bash
+
+##### fritzing
+sudo add-apt-repository -y ppa:ehbello/fritzing
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+sudo apt-fast -y install fritzing

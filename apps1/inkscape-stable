@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### inkscape-stable
+sudo add-apt-repository -y ppa:inkscape.dev/stable
+sudo apt-fast -y update
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y install inkscape

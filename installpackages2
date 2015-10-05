@@ -3,85 +3,46 @@
 
 ######## Backup & Sync
 
-#### aptik - http://www.howtogeek.com/206454/how-to-backup-and-restore-your-apps-and-ppas-in-ubuntu-using-aptik/
-#sudo apt-add-repository -y ppa:teejee2008/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install aptik
+#### backintime-testing
+#apps2/backintime-testing
+
+#### megasync
+#apps2/megasync
+
+#### DirSyncPro
+#apps2/dirsyncpro
 
 ######## OS & Utilities
 
+#### ddrescue-gui
+#apps2/ddrescue-gui
+
+#### guake
+#apps2/guake
+
+#### teamviewer
+apps2/teamviewer
+
 #### synapse
-sudo add-apt-repository -y ppa:synapse-core/testing
-sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
-sudo apt-fast -y update
-sudo apt-fast -y install synapse
+apps2/synapse
+
+#### tlp
+#apps2/tlp
 
 #### grub-customizer
-sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
-sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
-sudo apt-fast -y update
-sudo apt-fast -y install grub-customizer
+apps2/grub-customizer
 
-#### mtp support
-#sudo add-apt-repository -y ppa:langdalepl/gvfs-mtp
-#sudo apt-fast -y update & dist-upgrade
-sudo apt-fast -y install mtp-tools #mtpfs
+#### unetbootin
+#apps2/unetbootin
 
-#### UNetbootin
-#sudo add-apt-repository -y ppa:n-muench/programs-ppa
-#sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
-#sudo apt-fast -y update
-#sudo apt-fast -y install unetbootin
+#### bleachbit
+sudo apt-fast -y install bleachbit
 
-#### Plank Development PPA - http://www.noobslab.com/2014/08/install-plank-dock-and-plank-themer.html
-#sudo add-apt-repository -y ppa:docky-core/stable
-#sudo add-apt-repository -y ppa:ricotz/docky
-#sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
-#sudo apt-fast -y update
-#sudo apt-fast -y install plank
+#### clipit
+apps2/clipit
 
-#### Ubuntu Partner Repo
-#test -f /etc/apt/sources.list.d/ubuntu-partner.list || sudo sh -c 'echo "deb http://archive.canonical.com/ubuntu vivid partner" >> /etc/apt/sources.list.d/ubuntu-partner.list'
-#sudo apt-fast -y update
-
-#### gnome-pie
-#sudo add-apt-repository -y ppa:simonschneegans/testing
-#sudo apt-fast -y update
-#sudo apt-fast -y install gnome-pie
-
-#### qterminal
-#sudo add-apt-repository -y ppa:lubuntu-dev/lubuntu-daily
-#sudo apt-fast -y update
-#sudo apt-fast -y install qterminal
-
-#### Xorg Edgers - Possibly Unstable - Contains "bleeding-edge" graphics/system packages which may be unstable - more updated than ppa:ubuntu-x-swat/x-updates
-#sudo add-apt-repository -y ppa:xorg-edgers/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y dist-upgrade
-##sudo apt-fast -y install nvidia-graphics-drivers-346	#EXAMPLE
-#how to uninstall it -> sudo ppa-purge xorg-edgers  -> sudo ppa-purge ubuntu-x-swat -> sudo ppa-purge oibaf
-
-#### oibaf - Possibly Unstable
-#sudo add-apt-repository -y ppa:oibaf/graphics-drivers
-#sudo apt-fast -y update
-#sudo apt-fast -y dist-upgrade
-
-#### Getdeb (1)
-wget http://archive.getdeb.net/install_deb/getdeb-repository_0.1-1~getdeb1_all.deb &&
-wget http://archive.getdeb.net/install_deb/playdeb_0.3-1~getdeb1_all.deb &&
-sudo dpkg -i getdeb-repository_0.1-1~getdeb1_all.deb &&
-sudo dpkg -i playdeb_0.3-1~getdeb1_all.deb &&
-rm -f getdeb-repository_0.1-1~getdeb1_all.deb &&
-rm -f playdeb_0.3-1~getdeb1_all.deb
-
-#### Getdeb (2)
-#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-#test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-#sudo apt-fast -y update
-
-#### Various
-sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
+#### haguichi
+#apps2/haguichi
 
 ######## Desktop Environment
 
@@ -93,7 +54,8 @@ sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
 
 ######## Language packages
 
-#
+#sudo apt-fast -y install myspell-es wspanish language-pack-es language-pack-es-base 
+#sudo apt-fast -y install myspell-en-gb myspell-en-us
 
 ######## Security & Privacy
 
@@ -105,125 +67,88 @@ sudo apt-fast -y install keepassx #bum tilda thewindowfactory (twf)
 
 ######## Photos & Graphics
 
-#### krita
-#http://xubuntugeek.blogspot.com.es/2013/12/how-to-install-lastest-krita-in-xubuntu.html
-#http://dimula73.blogspot.com.es/2013/05/krita-lime-ppa-always-fresh-versions.html
-#sudo add-apt-repository -y ppa:dimula73/krita		# bleeding edge build
-#sudo apt-fast -y update
-sudo apt-fast -y install krita kde-l10n-es calligra-l10n-es
-#sudo apt-fast -y install krita-testing krita-testing-dbg krita-testing-l10n-es
-#sudo restart lightdm
-#to execute run "krita"
-#sudo add-apt-repository ppa:kubuntu-ppa/backports
-#sudo apt-fast update
-#sudo apt-fast install krita kritasketch
+#
 
 ######## Audio & Music
 
-#### tomahawk
-#sudo add-apt-repository -y ppa:tomahawk/ppa
-#sudo apt-fast -y update
-#sudo apt-fast -y install tomahawk
-
-#### nuvolaplayer 2 - ONLY 14.10
-#sudo add-apt-repository -y ppa:nuvola-player-builders/stable
-#sudo apt-fast -y update
-#sudo apt-fast -y upgrade
-#sudo apt-fast -y install nuvolaplayer
-
-#### nuvolaplayer 3 devel
-#sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 40554B8FA5FE6F6A
-##test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic stable" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
-#test -f /etc/apt/sources.list.d/tiliado-nuvolaplayer.list || sudo sh -c 'echo "deb https://tiliado.eu/nuvolaplayer/repository/deb/ utopic devel" >> /etc/apt/sources.list.d/tiliado-nuvolaplayer.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install nuvolaplayer3
+#
 
 ######## Videos & Movies
 
-#
-
-######## All multimedia content
-
-#### ffmpeg
-#sudo add-apt-repository -y ppa:kirillshkrogalev/ffmpeg-next
-#sudo apt-fast -y update
-#sudo apt-fast -y install ffmpeg
+#### smplayer + mpv support
+#apps2/smplayer
 
 ######## Development
 
-#### notepadqq - ONLY 14.10
-#sudo add-apt-repository -y ppa:notepadqq-team/notepadqq
-#sudo apt-fast -y update
-#sudo apt-fast -y install notepadqq
+#### dia
+apps2/dia
 
-#### git stable
-sudo add-apt-repository -y ppa:git-core/ppa
-sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
-sudo apt-fast -y update
-sudo apt-fast -y install git
+#### blender
+apps2/blender
 
-#### git extra
-sudo apt-fast -y install git-gui #git-cola qgit 
+##### fritzing
+apps2/fritzing
 
-#### git rc's
-#sudo add-apt-repository -y ppa:git-core/candidate
-#sudo apt-fast -y update
-#sudo apt-fast -y install git
+#### uecide
+#apps2/uecide
 
-#### Qt Linux
-#sudo apt-fast -y install mesa-common-dev libglu1-mesa-dev	####Qt dependencies
-#wget http://download.qt-project.org/official_releases/qt/5.4/5.4.0/qt-opensource-linux-x64-5.4.0.run
-#chmod +rwx ~/qt-opensource-linux-x64-5.4.0.run
-#~/qt-opensource-linux-x64-5.4.0.run
-#rm ~/qt-opensource-linux-x64-5.4.0.run
+#### arduino-ide
+#apps2/arduino-ide
 
-#### Various
+#### arduino-studio
+#apps2/arduino-studio
+
+#### git-stable
+apps2/git-stable
+
+#### git-rc
+#apps2/git-rc
+
+#### git-gui
+#sudo apt-fast -y install git-gui #git-cola qgit 
+
+#### smartgit
+#apps2/smartgit
+
+#### Qt-Linux
+#apps2/Qt-Linux
+
+#### kicad
+apps2/kicad
+
+#### meld
 sudo apt-fast -y install meld
+
+#### Dev Utils
 sudo apt-fast -y install build-essential packaging-dev checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon automake make dpatch patchutils autotools-dev debhelper quilt xutils lintian cmake libtool autoconf git git-core subversion bzr ant fastjar gawk gcc gdb ssh-askpass
 
 ######## Web Browsers
 
-#
+#### tor-browser
+apps2/tor-browser
 
 ######## Social
 
-##### Telegram (1)- http://deshack.net/install-telegram-for-linux-as-an-application/
+#### skype
+apps2/skype
 
-mkdir /home/usuario/Telegram
-wget https://tdesktop.com/linux -O /home/usuario/telegram.tar.xz
+##### mumble
+#apps2/mumble
 
-wget https://desktop.telegram.org/img/td_logo.png -O /home/usuario/Telegram/td_logo.png
-cd /home/usuario
-tar -xf telegram.tar.xz
+##### qtox
+#apps2/qtox
 
-rm /home/usuario/telegram.tar.xz
+##### utox
+#apps2/utox
 
-#Exec=bash -c "unset QT_STYLE_OVERRIDE ; /home/usuario/Telegram/Telegram -- %u"
+##### telegram - http://deshack.net/install-telegram-for-linux-as-an-application/
+apps2/telegram
 
-#test -f /usr/share/applications/telegram.desktop || sudo sh -c 'echo "[Desktop Entry]
-#Type=Application
-#Name=Telegram
-#Comment=Official desktop version of Telegram messaging app
-#Categories=Network
-#Exec=/home/usuario/Telegram/Telegram -- %u
-#Icon=/home/usuario/Telegram/td_logo.png" >> /usr/share/applications/telegram.desktop'
+##### Facebook-Messenger-Desktop
+apps2/Facebook-Messenger-Desktop
 
-##### Telegram (2) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
-##/opt/telegram/Telegram -- %u
-#sudo add-apt-repository -y ppa:atareao/telegram
-#sudo apt-fast -y update
-#sudo apt-fast -y install telegram
-
-##### Telegram (3) - NOT UPDATABLE IN-APP FROM PPA, ONLY IF A NEWER ON PPA IS PUBLISHED
-#sudo add-apt-repository -y ppa:noobslab/apps
-#sudo apt-fast -y update
-#sudo apt-fast -y install telegram-desktop
-
-##### messenger
-##https://github.com/Aluxian/Facebook-Messenger-Desktop/releases
-wget https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.3.3/Messenger_linux64.deb
-sudo dpkg -i Messenger_linux64.deb
-rm Messenger_linux64.deb
+##### WhatsApp-Desktop
+apps2/WhatsApp-Desktop
 
 ######## File Management
 
@@ -231,43 +156,12 @@ rm Messenger_linux64.deb
 
 ######## File Sharing
 
-#### jdownloader
-#Recommended v2 BETA http://installer.jdownloader.org/JD2SilentSetup_x64.sh
-#sudo add-apt-repository -y ppa:jd-team/jdownloader
-#sudo apt-fast -y install jdownloader #### recommended to INSTALL v2 BETA
-wget http://installer.jdownloader.org/JD2SilentSetup_x64.sh
-chmod +rwx JD2SilentSetup_x64.sh
-su usuario -c ./JD2SilentSetup_x64.sh
-rm JD2SilentSetup_x64.sh
-
 #### peerflix
-#sudo add-apt-repository -y ppa:chris-lea/node.js
-#sudo apt-fast -y update
-#sudo apt-fast -y install nodejs npm
-#sudo npm install -g peerflix
-##peerflix "magnet url" --vlc
-##peerflix "torrent url" --vlc
+apps2/peerflix
 
 #### samba
 ##sudo smbpasswd -a usuario
 sudo apt-fast -y install samba system-config-samba cifs-utils caja-share #winbind
-
-##### Frostwire - go to web or getdeb
-#wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
-#test -f /etc/apt/sources.list.d/getdeb_apps.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb apps" >> /etc/apt/sources.list.d/getdeb_apps.list'
-#test -f /etc/apt/sources.list.d/getdeb_games.list || sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu utopic-getdeb games" >> /etc/apt/sources.list.d/getdeb_games.list'
-#sudo apt-fast -y update
-#sudo apt-fast -y install frostwire
-##ancient
-#http://www.frostwire.com/
-#wget http://dl.frostwire.com/frostwire/6.0.3/frostwire-6.0.3.amd64.deb
-#sudo dpkg -i frostwire*.deb
-#rm frostwire*.deb
-
-##### Tribler
-#wget https://github.com/Tribler/tribler/releases/download/v6.4.1/tribler_6.4.1_all.deb
-#sudo dpkg -i tribler*.deb
-#rm tribler*.deb
 
 ######## News & Books
 

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#### backintime testing
+sudo add-apt-repository -y ppa:bit-team/testing
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+##sudo apt-fast -y install backintime-gnome
+sudo apt-fast -y install backintime-qt4

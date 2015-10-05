@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### gimp-edge
+sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp-edge
+sudo apt-fast -y update
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y install gimp gimp-plugin-registry gimp-help-es

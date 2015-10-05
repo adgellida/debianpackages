@@ -1,0 +1,8 @@
+#!/bin/bash
+
+##### qtox
+wget -qO - https://pkg.tox.chat/debian/pkg.gpg.key | sudo apt-key add -
+test -f /etc/apt/sources.list.d/tox.list || sudo sh -c 'echo "deb https://pkg.tox.chat/debian nightly release" >> /etc/apt/sources.list.d/tox.list'
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+sudo apt-fast -y install apt-transport-https qtox

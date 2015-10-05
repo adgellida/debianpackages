@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### vlc-stable
+sudo add-apt-repository -y ppa:videolan/stable-daily
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+sudo apt-fast -y install vlc #vlc-plugin-pulse libvlc5

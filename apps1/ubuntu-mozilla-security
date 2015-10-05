@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#### ubuntu-mozilla-security
+sudo add-apt-repository -y ppa:ubuntu-mozilla-security/ppa
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo apt-fast -y update
+sudo apt-fast -y install firefox firefox-locale-es

@@ -1,5 +1,6 @@
 #!/bin/bash
 
-sudo rename 's/jessie/vivid/' *jessie.list
-sudo rename 's/jessie/vivid/' *jessie.list.save
-#sudo rename 's/jessie/vivid/' *jessie.*
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list
+sudo sed -i 's/jessie/vivid/g' /etc/apt/sources.list.d/*.list.save
+sudo rename 's/jessie/vivid/' /etc/apt/sources.list.d/*.list
+sudo rename 's/jessie/vivid/' /etc/apt/sources.list.d/*.list.save

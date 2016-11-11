@@ -1,6 +1,6 @@
 ####debianpackages
 =============================================
-![](http://static2.linuxadictos.com/wp-content/uploads/logo-debian.jpg)
+<img src="http://static2.linuxadictos.com/wp-content/uploads/logo-debian.jpg" width="80">
 
 Compatible with any Debian based system:
 

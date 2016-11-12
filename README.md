@@ -1,6 +1,9 @@
-####debianpackages
+# debianpackages
 =============================================
+
 <img src="http://static2.linuxadictos.com/wp-content/uploads/logo-debian.jpg" width="80">
+
+A simple script to install debian packages.
 
 Compatible with any Debian based system:
 

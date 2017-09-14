@@ -1,7 +1,18 @@
-# debianpackages
+<img src="http://static2.linuxadictos.com/wp-content/uploads/logo-debian.jpg" width="80"> debianpackages
 =============================================
 
-<img src="http://static2.linuxadictos.com/wp-content/uploads/logo-debian.jpg" width="80">
+<p align="center">
+    <a href="https://www.gnu.org/licenses/gpl-2.0.en.html" target="_blank"><img src="https://img.shields.io/badge/license-GPLv2-blue.svg" alt="GNU GPL v2"></a>
+    <a href="https://github.com/adgellida/debianpackages/stargazers" target="_blank"><img src="https://img.shields.io/github/stars/adgellida/debianpackages.svg" alt="stars"></a>
+    <a href="https://github.com/adgellida/debianpackages/network" target="_blank"><img src="https://img.shields.io/github/forks/adgellida/debianpackages.svg" alt="forks"></a>
+    <a href="https://github.com/adgellida/debianpackages/issues?q=is%3Aopen" target="_blank"><img src="https://img.shields.io/github/issues/adgellida/debianpackages.svg" alt="open issues"></a>
+    <a href="https://github.com/adgellida/debianpackages/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/debianpackages/total.svg" alt="total downloads"></a>
+    <a href="https://github.com/adgellida/debianpackages/releases/latest" target="_blank"><img src="https://img.shields.io/github/downloads/adgellida/debianpackages/v2017.09.09/total.svg" alt="total downloads latest release"></a>
+    <a href="https://github.com/adgellida/debianpackages/releases/latest" target="_blank"><img src="https://img.shields.io/badge/latest release-no releases-blue.svg" alt="latest release"></a>
+    <a href="https://github.com/adgellida/debianpackages/commits/master" target="_blank"><img src="https://img.shields.io/badge/maintained-no-red.svg" alt="maintained"></a>
+    <a href="https://github.com/adgellida/debianpackages/releases"><img src="https://img.shields.io/badge/platform-Linux-lightgrey.svg" alt="Platforms"></a>
+    <a href="https://github.com/adgellida/debianpackages/releases"><img src="https://img.shields.io/badge/status-alpha-orange.svg" alt="Status"></a>
+</p>
 
 A simple script to install debian packages.
 

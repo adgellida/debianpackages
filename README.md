@@ -1,4 +1,4 @@
-<img src="http://static2.linuxadictos.com/wp-content/uploads/logo-debian.jpg" width="80"> debianpackages
+<img src="https://raw.githubusercontent.com/adgellida/debianpackages/master/logo.png" width="80"> debianpackages
 =============================================
 
 <p align="center">
